@@ -9,14 +9,15 @@
 <body>
 
 	<section>
-		<div class="nav">
 
+		<div class="nav">
 			<button onclick="showBlock__addTask()">Добавление записи</button>
 			<button onclick="showBlock__tasks()">активные</button>
 			<button onclick="showBlock__remote()">выполненные</button>
-
 		</div>
+
 	</section>
+
 	<section>
 		<div class="listBlock">
 			<div class="block__addTask nameTask_block">
@@ -24,8 +25,8 @@
 			    <input type="text" id="nameTask" class="nameTask">
 			    <div class="subproblemList" >
 
-			    	<input type="button" onclick="addSubproblem()" value="Добавить подзадачу" class="btn_addSubproblem">
-			    	<input type="button" onclick="delSubproblem()" value="Удалить подзадачу" class="btn_delSubproblem">
+			    	<input type="button"  value="Добавить подзадачу" class="btn_addSubproblem">
+			    	<input type="button"  value="Удалить подзадачу" class="btn_delSubproblem">
 
 				     <div class="table_subproblem">
 				      	<table>
@@ -43,9 +44,7 @@
 			    <input class="btn_addTask" type="button"  value="Добавить задачу" onclick="addTask()">
 			</div>
 
-			<div class="block__tasks showHide" id="out1">
-				<div class="item"><p class="title">поход в магазин через 154 дней</p><ul><li><input type="checkbox"> выйти из магазина</li><li><input type="checkbox"> дойти до дома</li></ul></div>
-			</div>
+			<div class="block__tasks showHide" id="out"></div>
 			<div class="block__remote showHide">
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio minus soluta esse maxime fugit minima numquam quod tempore officia ullam molestiae, assumenda quia praesentium perferendis sed omnis quo odit velit!
 				Rerum nostrum, labore. Expedita quidem, quas error quae suscipit dolorum? Fugiat dolor eveniet nihil corporis ex illo explicabo magnam cupiditate eius accusantium recusandae temporibus doloremque provident, ducimus, aliquid laborum, labore.
@@ -61,6 +60,7 @@
 		</div>
 	</section>
 	<script src="scripts/jquery-3.6.0.min.js"></script>
-	<script src="scripts/script.js"></script>
+	<!-- <script src="scripts/script.js"></script> -->
+	<script src="scripts/newScript.js"></script>
 </body>
 </html>
