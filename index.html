@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TodoList</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<section>
+		<div class="nav">
+
+			<button onclick="showBlock__addTask()">Добавление записи</button>
+			<button onclick="showBlock__tasks()">активные</button>
+			<button onclick="showBlock__remote()">выполненные</button>
+
+		</div>
+	</section>
+	<section>
+		<div class="listBlock">
+			<div class="block__addTask nameTask_block">
+				<h2>Задача</h2>
+			    <input type="text" id="nameTask" class="nameTask">
+			    <div class="subproblemList" >
+
+			    	<input type="button" onclick="addSubproblem()" value="Добавить подзадачу" class="btn_addSubproblem">
+			    	<input type="button" onclick="delSubproblem()" value="Удалить подзадачу" class="btn_delSubproblem">
+
+				     <div class="table_subproblem">
+				      	<table>
+				      		<tbody id="subproblemList" >
+				      		</tbody>
+				  	 	</table>
+				     </div>
+
+			    </div>
+
+			    <div class="dateAndtime_block">
+			    	<input type="datetime-local"  id = "datetime" name="" class="datetime">
+			    </div>
+			    <br>
+			    <input class="btn_addTask" type="button"  value="Добавить задачу" onclick="addTask()">
+			</div>
+
+			<div class="block__tasks showHide" id="out1">
+				<div class="item"><p class="title">поход в магазин через 154 дней</p><ul><li><input type="checkbox"> выйти из магазина</li><li><input type="checkbox"> дойти до дома</li></ul></div>
+			</div>
+			<div class="block__remote showHide">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio minus soluta esse maxime fugit minima numquam quod tempore officia ullam molestiae, assumenda quia praesentium perferendis sed omnis quo odit velit!
+				Rerum nostrum, labore. Expedita quidem, quas error quae suscipit dolorum? Fugiat dolor eveniet nihil corporis ex illo explicabo magnam cupiditate eius accusantium recusandae temporibus doloremque provident, ducimus, aliquid laborum, labore.
+				Dolor similique numquam atque magni commodi eligendi nihil voluptate ut nulla ullam dolorem autem, laboriosam voluptatem corrupti vel accusantium iste quis itaque assumenda, aperiam eos, quos, ratione id tempora! Eligendi!
+				Officiis numquam architecto excepturi ad velit dolorum dolorem aliquam. Dolores facere aspernatur sit optio officia praesentium. Blanditiis nobis, mollitia voluptatem quis! Beatae, numquam. Ipsum, quas, eius magni accusantium necessitatibus distinctio?
+				Consequatur nulla, harum fugit facilis culpa, cupiditate consequuntur dolore tenetur optio unde praesentium libero doloremque voluptatem illum minus quos dolorum, labore iste voluptatum sunt hic, id. Doloribus quos quam necessitatibus!
+				Quisquam suscipit dolor voluptate voluptatem veniam iure magni libero, deleniti a est repellendus laboriosam qui rem ducimus consequuntur quibusdam necessitatibus ab, nam, eaque sapiente fugit. Dolore sed, in quis autem.
+				Deleniti, voluptates inventore distinctio dicta maiores qui, fugiat et commodi pariatur assumenda corrupti totam. Delectus, fugit dignissimos laboriosam, pariatur quo voluptates quia? Aliquid, voluptatibus repudiandae. Obcaecati non facere atque placeat.
+				Delectus voluptas porro aliquid magnam dolorum adipisci quam voluptates quasi magni praesentium accusantium non tempora optio, nisi. Facilis, aut! Labore, aperiam ad. Veritatis omnis soluta corporis molestiae accusamus deserunt natus.
+				Similique cumque aliquam vitae nobis! Animi a amet enim, nemo obcaecati tempore dignissimos ratione. Labore quam quos dolore autem fugiat perspiciatis ad eius cupiditate fugit. Placeat voluptas atque voluptatibus et?
+				Ut assumenda, tempore. Neque ad omnis molestias. Consequuntur quidem aliquam ipsum et adipisci inventore minima, unde odit, labore ad excepturi tempore a voluptatibus corrupti culpa expedita. Dolor ea, laudantium incidunt!
+			</div>
+		</div>
+	</section>
+	<script src="scripts/jquery-3.6.0.min.js"></script>
+	<script src="scripts/script.js"></script>
+</body>
+</html>
